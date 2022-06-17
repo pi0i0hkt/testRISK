@@ -77,7 +77,7 @@ RandStringRunes(int, letterRunes string) string {
 }
 */
 
-type PersonState struct {
+PersonState struct {
 	URL       string
 	X         int
 	Y         int
