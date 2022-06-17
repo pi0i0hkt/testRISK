@@ -58,7 +58,7 @@ def RandStringRunes(int, letterRunes string) string {
 {
   "_links": {
     "self": {
-      "href": "https://YOUR_SERVICE_URL"
+      "href": "https://https://testrisk-xiy34zjfwa-uc.a.run.app"
     }
   },
   "arena": {
@@ -263,10 +263,4 @@ def getPOST(w http.ResponseWriter, req *http.Request) {
 
 	w.Write([]byte(m))
 
-}
-
-def main() {
-	http.HandleFunc("/", getPOST)
-
-	http.ListenAndServe(":8080", nil)
 }
