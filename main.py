@@ -46,7 +46,7 @@ def var (
 	WPosition = []string{S, N, E}
 	)
 	
-def RandStringRunes(int, letterRunes string) string {
+RandStringRunes(int, letterRunes string) string {
 	b := make([]byte, n)
 	for i := range b {
 		b[i] = letterRunes[rand.Intn(len(letterRunes))]
