@@ -241,26 +241,4 @@ def getPOST(w http.ResponseWriter, req *http.Request) {
 		}
 	}
 
-	fmt.Println(board)
-
-	fmt.Println(me)
-
-	var m string
-
-	if checkHasPersonInDirection(me.X, me.Y, me.Direction) {
-		fmt.Println("Has person In Direction")
-		m = T
-	} else {
-		fmt.Println("No person In Direction")
-		m = RandStringRunes(1, "FFRL")
-	}
-
-	if isBuilding(me.X, me.Y, me.Direction) {
-		m = RandStringRunes(1, "RL")
-	}
-
-	fmt.Println(m)
-
-	w.Write([]byte(m))
-
 }
